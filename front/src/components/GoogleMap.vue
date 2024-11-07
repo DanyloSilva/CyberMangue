@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h2 style="text-align: center; color: white;">BBox - Lixeiras Inteligentes</h2>
+    <h2 style="text-align: center; color: white;">BBox - Localização das Lixeiras Inteligentes</h2>
     <p style="text-align: center; color: white;">
-      O BBox é uma lixeira inteligente que usa visão computacional para identificar e cadastrar lixo eletrônico, incentivando a reciclagem e oferecendo benefícios como a Recifecoin.
+      O BBox é uma lixeira inteligente que usa visão computacional para identificar e cadastrar lixo eletrônico, incentivando a reciclagem e 
+      ao descartar de forma correta seu lixo eletronico o usuario ira receber Recifecoin que podem ser trocados e revertidos em pontos livelo e outros tipos de beneficios.
     </p>
     <gmap-map
       :center="center"

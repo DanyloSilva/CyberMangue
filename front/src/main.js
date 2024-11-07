@@ -1,16 +1,21 @@
-import Vue from 'vue'
-import App from './App.vue'
-import * as VueGoogleMaps from "vue2-google-maps";
+import Vue from 'vue';
+import App from './App.vue';
+import * as VueGoogleMaps from 'vue2-google-maps';
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css'; 
+import '@mdi/font/css/materialdesignicons.css';
 
+Vue.use(Vuetify); // Usar o Vuetify
 Vue.use(VueGoogleMaps, {
   load: {
-    key: "AIzaSyBE5buQjbuOj2kaXTpdMIHpPFS9IkLrd2Y",
-    libraries: "", // necessary for places input
+    key: process.env.VUE_APP_GOOGLE_MAPS_API_KEY,
+    libraries: "",
   },
 });
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
   render: h => h(App),
-}).$mount('#app')
+  vuetify: new Vuetify(), // Adicionar Vuetify à instância Vue
+}).$mount('#app');
