@@ -1,4 +1,9 @@
-# vuemap
+# projeto BBbox 
+Projeto desenvolvido para a hackaton do banco do brasil 
+
+
+
+## como rodar o front 
 
 ## Project setup
 ```
@@ -22,3 +27,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## versao do node v14.21.3
